@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1: HTML and CSS</title>
+
+    <link rel="icon" type="image/x-icon" href="MITlogo.png">
+
+    <style>
+          
+            body header {
+                background: #353B56;
+            }
+            header, footer {
+                color: #fff;
+                padding: 1em 2em;
+            }
+           
+            header a, header a:focus, header a:hover {
+                color: #fff;
+            }
+            a {
+                color: #337ab7;
+                text-decoration: none;
+            }
+            a:hover {
+            text-decoration: underline;
+           }
+            a {
+                background-color: transparent;
+                color: #337ab7;
+                text-decoration: none;
+            }
+            
+            body {
+                font-size: 1em;
+            }
+
+            header > div {
+            float: right;
+            }
+              
+            header, footer {
+            color: #fff;
+            padding: 1.5em 3em;
+            }
+            header a, header a:focus, header a:hover {
+            color: #fff;
+            }
+           
+            footer.footer-margin {
+            text-align: left;
+            color: #999;
+            background: #fff;
+            padding: 0 1em;
+            }
+            @media(min-width:768px) {
+            footer.footer-margin {
+                padding: 0 1em 1em 2em;
+                position: absolute;
+                bottom: 4em;
+            }
+            }
+            @media print {
+            footer.footer-margin {
+                position: static;
+                width: 100%;
+            }
+            }
+            footer.footer-margin > div {
+            font-weight: normal;
+            font-size: 85%;
+            line-height: 1.33;
+            }
+
+            header{
+                unicode-bidi: isolate;
+
+            }
+     
+
+
+        nav>li {
+        position: relative;
+        display: block;
+        }
+
+        body .nav > li.navli> a {
+        background-color: #64C9DC;
+        border-right: 5px solid #0FACCB;
+       }
+        @media(min-width:768px) {
+        nav.table_nav {
+            position: fixed;
+            padding: 0;
+        }
+        }
+        @media print {
+        nav.table_nav {
+            position: absolute;
+        }
+        }
+        .nav > li > a {
+        padding: .22em .9em .6em 1em;
+        color: #999;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+        }
+        .nav > li > a {
+        font-weight: 400;
+         font-size: 0.9em;
+        line-height: 1.3em;
+        }
+        .nav > li > a:hover {
+        background-color: #eeeeee;
+        color: #333;
+        }
+        .nav > li.navli> a {
+        color: #fff;
+        background-color: #333;
+        text-decoration: none;
+
+        }
+        .nav{
+            list-style-type: none;
+            
+
+        }
+
+        li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+        unicode-bidi: isolate;
+        
+        }
+
+        .nav {
+        padding-left: 0;
+        margin-bottom: 2;
+        list-style: none;
+            }
+
+            ol, ul {
+                margin-top: 0;
+            }
+
+
+            ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 0em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 1px;
+        padding-inline-start: 40px;
+        unicode-bidi: isolate;
+    }
+        blockquote {
+        margin-bottom: 10px;
+        font-size: inherit;
+        font-weight: inherit;
+        }
+
+        nav.table_nav {
+        vertical-align: top;
+        
+        }
+        nav.table_nav {
+        padding: 1px;
+        }
+        nav.table_nav {
+        padding-right: 1em;
+        padding-left: 0em;
+        }
+        
+        nav.table_nav{
+            text-align: left;
+        }
+       
+        .hr.h {
+        width: 2px; 
+        height: 55vh;
+        background-color: blue; 
+      }
+
+        body footer {
+            background: #999;
+        }
+
+        footer {
+            background: #333;
+            text-align: right;
+            margin-top: 2em;
+            unicode-bidi: isolate;
+            width: 100%;
+            padding: 20px 0px;
+
+        }
+        header, footer, h1, h2, h3, h4, h5, h6, nav {
+            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 400;
+        }
+        
+        .container.lab1 {
+            border-bottom: 1px solid #0FACCB;
+            margin-top: 1em;
+            padding-bottom: 5px;
+        }
+        .h1, h1 {
+           font-size: 36px;
+        }
+
+
+        p.bar1 {
+        border: 1px solid rgb(160, 159, 129);
+        padding: 0.5em 1em;
+        background: rgb(250, 255, 226) none repeat scroll 0% 0%;
+        
+        }
+
+        p {
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+        }
+
+        p {
+            margin: 0 0 0px;
+        }
+
+
+        .h2, h2 {
+            font-size: 30px;
+        }
+
+      b, strong {
+          font-weight: 700;
+        }
+
+        .h1, .h2, .h3, h1, h2, h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+        display: block;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+    }
+
+       
+
+
+
+    .container {
+        padding-right: 270px;
+        padding-left: 270px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    </style>
+</head>
+
+
+<body>
+
+    <header class="hea">
+        <a href="https://web.mit.edu/6.813/www/sp17/">6.813/6.831 — User Interface Design & Implementation</a>
+
+        <div>Spring 2017 </div>
+    </header>
+
+    <nav class="table_nav">
+        <ul class="nav">
+            <li class="navli"><a href="#lab1">Lab 1: HTML and CSS</a></li>
+            &nbsp
+
+            <li class=""><a href="#Overview">Overview</a></li>
+            &nbsp
+
+            <li class=""><a href="#Required">Required Resources</a></li>
+            &nbsp
+
+            <li class=""><a href="#Refrences">References</a></li>
+            &nbsp
+
+            <li class=""><a href="#Learning">Learning HTML</a></li>
+            &nbsp
+
+            <li class=""><a href="#Exercise0">Exercise 0: Set up the 
+                  <br>barebones of Doggo's 
+                <br>website</a></li>
+            &nbsp
+
+            <li class=""><a href="#Exercise1">Exercise 1: Set up the "About <br >Me" section</a></li>
+            &nbsp
+
+            <li class=""><a href="#Exercise2">Exercise 2: Finish setting up<br> the other sections yourself.</a></li>
+            &nbsp
+
+            <li class=""><a href="#learning_css">Learning CSS</a></li>
+            &nbsp
+
+            <li class=""><a href="#Exercise3">Exercise 3: Add and style a <br>table of courses</a></li>
+            &nbsp
+
+            <li><a href="#Exercise4">Exercise 4: Make it your own</a></li>
+            &nbsp
+            
+            <li class=""><a href="#Exercise5">Exercise 5: Codecademy<br> Exercises</a></li></ul></nav>
+
+    <main class="container">
+        <h1 id="lab1">Lab 1: HTML and CSS</h1>
+        <hr>
+
+        <div>
+            <div>
+        <p class="bar1">
+            This lab is on <b>Wednesday</b>, <b>February 15</b>, <b>2017</b>  at <b>7:30 P.M.</b> in <b>32-082.</b><br>
+            This is a non-compulsory programming lab to introduce students to webpage building with  HTML and CSS.
+            <br>View <a href="view-source:http://web.mit.edu/6.813/www/sp17/programming-labs/lab1-html-css/new%20lab/home.html">the source</a> of <a 
+                href="https://web.mit.edu/6.813/www/sp17/programming-labs/lab1-html-css/new%20lab/home.html"> this page</a> to see a nicely documented solution to the exercises below.
+            </p>
+    
+        <br>
+        <p>
+            <b>Last Updated:</b> Sun, Jan 31 2015 at 10:30 P.M.
+        </p>
+    <h2 id="Overview">Overview</h2>
+    <div data-outline="O1">
+        <p>In this programming lab, you will be completing a series of exercises that will help you structure 
+            and style web pages.</p></div>
+
+    <h2 id="Required">Required Resources</h2>
+    <div data-outline="Required">
+        <ul>
+            <li>You will need a a text editor, preferably with syntax highlighting. We recommend using <a href="http://www.sublimetext.com/">Sublime Text,</a> available on OS X, Windows and Linux.</li>
+            <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+        </ul>
+        
+    </div>
+
+    
+
+    <h2 id="Refrences">References</h2>
+    <div data-outline="Refrences">
+        <ul>
+            <li><a href="https://www.w3schools.com/html/">HTML reference</a></li>
+            <li><a href="https://www.w3schools.com/css/">CSS reference</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1ztVhv_-6FDi1SXfwI6ZbRG_sZ5gB7kqQci_OrjL7xcg/edit?usp=sharing">
+                A condensed CSS primer by 6.831 staff</a> (It is a Google Presentation, and comments are allowed.)</li>
+        </ul>
+    </div>
+
+    <h1 id="Learning">Learning HTML</h1>
+    <hr class="h">
+
+    <p>At the end, your webpage should look like:
+    </p>
+
+    <img src="img1.PNG" height="700px">
+
+
+    <div>
+    <h2 id="Exercise0">Exercise 0: Set up the barebones of Doggo's website    </h2>
+    <p>For this exercise, open up your text editor and follow along with what we do on the projector.</p>
+    <ul>
+        <li>Learn about <a href="https://www.w3schools.com/tags/">HTML tags.</a></li>
+        <li>Set up the header and body of your HTML file.</li>
+        <li>Link Bootstrap.</li>
+    </ul>
+</div>
+
+
+    <div>
+        <h2 id="Exercise1">Exercise 1: Set up the "About Me" section</h2>
+        <p>For this exercise, open up your text editor and follow along with what we do on the projector.</p>
+
+        <ul>
+            <li>Learn about divs and classes.</li>
+            <li>Learn about<a href="https://getbootstrap.com/docs/3.4/css/"> Bootstrap's grid system</a></li>
+            <li>Add a header, image, and link.</li>
+        </ul>
+    </div>
+
+    
+    <div>
+        <h2 id="Exercise2">Exercise 2: Finish setting up the other sections yourself.</h2>
+        <ul>
+            <li>Add a table with your classes.</li>
+            <li>Add a list with your extracurriculars.</li>
+            <li>Add a form that people can use to contact you with.</li>
+        </ul>
+    </div>
+
+
+    <h2 id="learning_css">Learning CSS</h2>
+    <hr>
+      
+    <div>
+        <h2 id="Exercise3">Exercise 3: Add and style a table of courses</h2>
+        <p>Modify the page to include a table of courses you are taking and have taken. Here are some<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#examples"> examples of simple tables.</a> Your table should have:</p>
+        <ul>
+            <li>three columns: course number, course title, and semester taken</li>
+            <li>two vertical sections, with headers for courses taken 'For Credit' and as 'Listener'</li>
+            <li>alternating row background colors, so it's easy to read</li>
+            <li>green colored text if the class is currently being taken</li>
+        </ul>
+    </div>
+
+
+
+    <div>
+        <strong style="color: #cc3333;">Featured videos:</strong>
+        &nbsp
+        <a href="http://crowdy.juhokim.com/play/22/" target="_blank"> HTML Website Tables & Layouts Tutorial</a>
+    </div>
+    &nbsp
+    <div>
+        <p>It should look something like this:</p>
+    </div>
+
+
+    <img src="img2.PNG" src="ex3-example.png" width="600px/">
+   
+
+
+
+    <div>
+        <h2 id="Exercise4">Exercise 4: Make it your own</h2>
+        <p>Try out adding:</p>
+        <ul>
+            <li>different fonts</li>
+            <li>a cool background</li>
+            <li>anything your creative mind can think of!</li>
+        </ul>
+    </div>
+
+
+    <div>
+        <h2 id="Exercise5">Exercise 5: Codecademy Exercises</h2>
+        
+            <p>Do the projects on the<a href="https://www.codecademy.com/catalog/subject/web-development"> Codecademy website.</a></p>
+        
+    </div>
+    </div>
+    </div>
+
+    </main>
+
+
+    <footer>MIT EECS
+        &nbsp
+        <a href="https://accessibility.mit.edu/"> accessibility</a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+    </footer>
+    
+</body>
+</html>
